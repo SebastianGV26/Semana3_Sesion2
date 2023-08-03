@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <section>
+        <div>
+            <h1>Que es CSS y para que Sirve</h1>
+            <p>Es un lenguaje de hoja de estilos que permite crear el diseño de una web, este lenguaje sirve para
+                personalizar y darle mejor vista a la página web y así poder presentar de una manera agradable el
+                contenido al usuario</p>
+        </div>
+        <div>
+            <h2>Maneras de enlazar CSS</h2>
+            <p>se puede hacer mediante el link en el head, inline, con el atributo style de HTML o vinculando con el
+                import</p>
+        </div>
+        <div>
+            <h2>Los pilares de CSS</h2>
+            <h3 class="selector">Selectores</h3>
+            <p>Son la manera de indicar a que elementos de html se le va aplicar estilos</p>
+            <h3 class="cascada">Cascada</h3>
+            <p>Significa que el último valor es el que prevalece, siempre y cuando tenga la misma
+                especificidad</p>
+            <h3 class="herencia">Herencia<p>Es cuando el selector hereda valores del padre con el valor inherit</p>
+            </h3>
+            <div class="definicion_especificidad">
+                <h3 class="especificidad">Especificidad</h3>
+                <p>Es número o valor que adquieren los selectores para que puedan ganar jerarquía y así poder tener los
+                    estilos css del mayor, no hace caso a la cascada.
+                </p>
+                <label>Los valores de la Especificidad son:</label><br>
+                <label>Etiqueta => 1</label><br>
+                <label>Clase => 10</label><br>
+                <label id="id">ID => 100</label><br>
+                <label style="color: seagreen;">Inline => 1000</label><br>
+                <label class="important" style="color: red;">!Important => infinito *</label>
+                <p>* El important puede ser superado por otro important con mayor valor de espeficidad, sin importar la
+                    cascada</p>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

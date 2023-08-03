@@ -1,4 +1,33 @@
 h1{
     color: red;
 }
-
+h2{
+    color: blue;
+}
+h3.selector{
+    color: brown;
+}
+h3.cascada{
+    color: skyblue;
+}
+h3.herencia{
+    color: coral;
+}
+p{
+    color: inherit;
+}
+div.definicion_especificidad{
+    color: darkgreen;
+}
+h3.especificidad{
+    color: darkviolet;
+}
+div label{
+    color: blue;
+}
+div label#id{
+    color: darkgoldenrod;
+}
+div label.important{
+    color: black !important;
+}
