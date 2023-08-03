@@ -20,21 +20,47 @@
             <h2>Maneras de enlazar CSS</h2>
             <p>se puede hacer mediante el link en el head, inline, con el atributo style de HTML o vinculando con el
                 import</p>
+                <h3>Ejemplos</h3>
+            <p>En el head: "<"link rel="stylesheet" href="./styles.css">"</p>
+            <p>Inline: "<"h1 style="color: red;"> Hola Mundo"<"/h1">"</p>
+            <p>"<"style type = "text/css"><br>
+            p{color: red;}<br>
+            "<"/style">"
+            </p>
+            <p>@import "./styles.css"</p>
         </div>
         <div>
             <h2>Los pilares de CSS</h2>
             <h3 class="selector">Selectores</h3>
             <p>Son la manera de indicar a que elementos de html se le va aplicar estilos</p>
+            <h3>Ejemplos</h3>
+            <p>Como por ejemplo: h1, h2, p, a</p>
             <h3 class="cascada">Cascada</h3>
             <p>Significa que el último valor es el que prevalece, siempre y cuando tenga la misma
                 especificidad</p>
+                <h3>Ejemplos</h3>
+                <p>Como por ejemplo: h1{color: red;}</p>
+                <p>h1{color: blue}</p>
+            <p>El texto aparecerá de color azul, ya que es el último valor que se le dio al selector</p>
             <h3 class="herencia">Herencia<p>Es cuando el selector hereda valores del padre con el valor inherit</p>
             </h3>
+            <h3>Ejemplos</h3>
+            <p>h3{color: skyblue;}</p>
+            <p>p{color: inherit;}</p>
+            <p>El parrafo aparecerá de color celeeste, ya que su padre tiene ese valor</p>
             <div class="definicion_especificidad">
                 <h3 class="especificidad">Especificidad</h3>
                 <p>Es número o valor que adquieren los selectores para que puedan ganar jerarquía y así poder tener los
                     estilos css del mayor, no hace caso a la cascada.
                 </p>
+                <p>"<"h3 class="especificidad" id="especi" ">"Hola Mundo "<"/h3></p>
+                <p>h3.especificidad{
+                    color: skyblue;
+                }</p>
+                <p>h3#especi{
+                    color: blue;
+                }</p>
+                <p>El h3 tomará el color azul, ya que por especificidad, el id tiene el valor más alto y por ende, prevalece</p>
                 <label>Los valores de la Especificidad son:</label><br>
                 <label>Etiqueta => 1</label><br>
                 <label>Clase => 10</label><br>
